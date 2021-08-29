@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: lightgrey;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0; 
+        height: 100; 
+        width: 100%; 
+        background-color: white;
+    }
+
+    .navlink {
+        font-size: 15pt;
+        margin-top: 35px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    #video {
+        display: block;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    fieldset {
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+    }
+
+    .topic-heading {
+        text-align: center;
+    }
+
+    p {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: justify;
+    }
+
+    .flexcontainer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .flexcontainer > div {
+        background-color: #f1f1f1;
+        width: 200px;
+        margin: 5px;
+        text-align: center;
+        border-width: 3px;
+        border-style: solid;
+        border-color: darkgray;
+        border-radius: 12px;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Company</title>
+</head>
+<nav>
+    <div>
+        <a style="float: left;" href="#home">
+            <img src="https://www.strunkmedia.com/wp-content/uploads/2018/05/bigstock-222496366.jpg" 
+            alt="Mountain Logo"
+            height="100"></a>
+        <a class="navlink" href="#pricing">Pricing</a>
+        <a class="navlink" href="#how">How It Works</a>
+        <a class="navlink" href="#features">Features</a>
+        </div>
+</nav>
+<body>
+    <div>
+        <section id="home">
+            <iframe id="video"
+                width="560" 
+                height="315"
+                src="https://www.youtube.com/embed/YHusujC8MOw"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+      </section>
+    </div>
+    <div class="topic-heading">
+        <section id="features">
+            <h1>Features</h1>
+                <p>
+                    What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+        </section>
+    </div>
+    
+    <div class="topic-heading">
+        <section id="how">
+            <h1>How It Works</h1>
+            <p>
+                Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </section>
+    </div>
+          
+    <div class="topic-heading">
+        <section id="pricing">
+            <h1>Pricing</h1>
+            <div class="flexcontainer">
+                <div class="one-mountain"><h3>$1M</h3>One Mountain</div>
+                <div class="two-mountain"><h3>$1.5M</h3>Two Mountains</div>
+                <div class="three-mountain"><h3>$2M</h3>Three Mountains</div>
+                <div class="four-mountain"><h3>$3M</h3>Four Mountains</div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <form id="form" action="">
+            <fieldset>
+                <legend>Want to learn more? Sign up for the sweet mountaineer newsletter.</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input id="submit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
